@@ -23,6 +23,7 @@ gem 'coffee-rails', '~> 4.2'
 
 gem 'haml', '~> 4.0.7'
 gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'aws-sdk', '~> 2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
