@@ -22,7 +22,8 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'haml', '~> 4.0.7'
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'aws-sdk', '~> 2'
 
 # Use jquery as the JavaScript library

@@ -1,8 +1,14 @@
-%nav.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
   .container
+    = link_to 'Photo', root_url, class: 'navbar-brand'
     %ul.navbar-nav.mr-auto
       %li.nav-item= link_to 'Home', root_url, class: "nav-link"
       %li.nav-item= link_to 'Support', support_path, class: "nav-link"
-    %ul.navbar-nav
-      %li.nav-item= link_to 'Login', support_path, class: "nav-link"
-      %li.nav-item= link_to 'Signup', new_user_path, class: "nav-link"
+      - if logged_in?
+        %li.nav-item.dropdown
+          %a(href= "#" class = "nav-link dropdown-toggle" id = "navbarDropdownMenuLink" data-toggle = "dropdown") Account
+          .dropdown-menu
+            = link_to 'Profile', current_user, class: "dropdown-item"
+            = link_to 'Logout', logout_path, method: :delete, class: "dropdown-item"
+      - else
+        %li.nav-item= link_to 'Login', login_path, class: "nav-link"
