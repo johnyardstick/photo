@@ -25,6 +25,7 @@ gem 'haml', '~> 4.0.7'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'aws-sdk', '~> 2'
+gem 'font-awesome-sass'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
