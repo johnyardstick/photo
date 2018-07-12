@@ -1,7 +1,7 @@
 .container
   %h1 Edit Account
-  .row
-    .col-md-6.col-md-offset-3
+  .row.align-items-center
+    .col
       = form_for(@user) do |f|
         = render 'shared/error_messages'
         .form-group
