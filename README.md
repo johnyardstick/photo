@@ -3,10 +3,9 @@ Photography CRM! Show off your work and distribute your clients their photos.
 
 # Things to learn
 
-- Amazon S3 for photo storage
 - Stripe to Charge clients
-- Heroku for hosting
-- Maybe Amazon SES for emails?
+- DIGITAL OCEAN BABY! (docker all the things)
+- Postmark for emails
 - Adwords for free accounts
 
 # Features
